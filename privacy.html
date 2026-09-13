@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlipFold - Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --text: #1e293b;
+        --text-muted: #64748b;
+        --accent: #0284c7;
+        --border: #e2e8f0;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 0.375rem;
+      margin: 1.5rem 0;
+    }
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <strong>Application:</strong> FlipFold: Motion Transitions (<code>com.flipfold.app</code>)<br>
+      <strong>Effective Date:</strong> September 13, 2026
+    </div>
+
+    <p>This Privacy Policy describes how <strong>FlipFold: Motion Transitions</strong> (the "Application"), developed and operated by <strong>Harshita Singh</strong> ("Service Provider", "we", "us", or "our"), handles device information and protects your privacy.</p>
+
+    <div class="highlight-box">
+      <strong>Summary:</strong> FlipFold operates entirely on your physical device. We do not collect, store, transmit, or sell any personal data, location data, or contact lists. Sensor data (such as fold angle and posture) is processed strictly in memory in real time to render visual transition animations.
+    </div>
+
+    <h2>1. Data Controller Information</h2>
+    <p>Harshita Singh acts as the Data Controller responsible for data protection inquiries:</p>
+    <ul>
+      <li><strong>Name:</strong> Harshita Singh</li>
+      <li><strong>Address:</strong> Hermann-Dorner-Allee, 12489 Berlin, Germany</li>
+      <li><strong>Email:</strong> <a href="mailto:codecklabs@gmail.com">codecklabs@gmail.com</a></li>
+    </ul>
+
+    <h2>2. Sensor & Hardware Data Processing</h2>
+    <p>FlipFold is designed specifically for foldable and flip Android devices. To provide fluid transition effects between device states, the Application accesses the following hardware APIs:</p>
+    <ul>
+      <li><strong>Hinge Angle Sensors:</strong> Measures the physical hinge fold angle in degrees via Android's hardware <code>SensorManager</code>.</li>
+      <li><strong>Fold Posture & Window State:</strong> Determines whether your device is Flat, Half-Fold (Flex mode), or Closed via the Jetpack WindowManager API.</li>
+      <li><strong>Display Configuration & Metrics:</strong> Reads screen resolution and orientation to align the visual transition overlay.</li>
+    </ul>
+    <p><strong>Strict Privacy Commitment:</strong> All sensor calculations and visual shaders run 100% on-device in temporary volatile memory. Sensor readings are never recorded, never transmitted across the network, and never shared with third parties.</p>
+
+    <h2>3. Personal Information & Permissions</h2>
+    <ul>
+      <li><strong>No Account Required:</strong> You do not need to register, log in, or provide any personal details to use the Application.</li>
+      <li><strong>No Location Data:</strong> The Application does not request or collect GPS, Wi-Fi, or cellular location data.</li>
+      <li><strong>No Camera or Microphone Access:</strong> The Application never requests access to your camera, audio, contacts, or calendar.</li>
+      <li><strong>Local Diagnostics (User-Initiated Only):</strong> If you deliberately choose to export a performance trace from the Diagnostics screen, a local JSON diagnostic report is generated on your device storage. This report contains purely hardware performance metrics (frame render times, sensor event latency) and is only transmitted if you explicitly choose to share the file via Android's system share sheet.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>The Application utilizes standard core platform libraries provided by Google to enable installation and system updates through the Google Play Store:</p>
+    <ul>
+      <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+    </ul>
+    <p>FlipFold does not integrate third-party advertising SDKs, behavioral tracking trackers, or third-party analytics SDKs.</p>
+
+    <h2>5. Legal Basis for Processing (GDPR)</h2>
+    <p>Where Regulation (EU) 2016/679 (GDPR) applies, the Service Provider processes data under the following legal bases:</p>
+    <ul>
+      <li><strong>Contract Performance (Art. 6(1)(b) GDPR):</strong> Necessary to execute requested visual transition effects and operate the application features.</li>
+      <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> Ensuring stability, security, and bug prevention for the local application software.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>The Application is directed toward a general audience and is not intended for children under 16 years of age. We do not knowingly solicit or collect information from children.</p>
+
+    <h2>7. Data Security & Storage</h2>
+    <p>Because FlipFold does not operate remote servers or store personal data in the cloud, there is no centralized database susceptible to remote breaches. Local user configuration settings (such as effect choices and duration adjustments) remain securely on your device and are wiped when the Application is uninstalled.</p>
+
+    <h2>8. Your Rights (GDPR & CCPA/CPRA)</h2>
+    <p>Depending on your jurisdiction, you have statutory rights concerning personal data:</p>
+    <ul>
+      <li><strong>GDPR (European Economic Area):</strong> Right of access, rectification, erasure, restriction of processing, and lodging a complaint with your local supervisory authority.</li>
+      <li><strong>CCPA / CPRA (California Residents):</strong> Right to know, right to delete, right to non-discrimination, and right to opt-out of data sales (we do not sell or share user data).</li>
+    </ul>
+    <p>To exercise any rights, contact the Service Provider at <a href="mailto:codecklabs@gmail.com">codecklabs@gmail.com</a>.</p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically. Any modifications will be posted to this page with an updated Effective Date. Continued use of the Application signifies acceptance of the revised policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding privacy in FlipFold, please contact us:</p>
+    <p>
+      <strong>Harshita Singh</strong><br>
+      Email: <a href="mailto:codecklabs@gmail.com">codecklabs@gmail.com</a><br>
+      Address: Hermann-Dorner-Allee, 12489 Berlin, Germany
+    </p>
+
+    <footer>
+      &copy; 2026 FlipFold. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
