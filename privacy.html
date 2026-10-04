@@ -94,13 +94,13 @@
     <h1>Privacy Policy</h1>
     <div class="meta">
       <strong>Application:</strong> FlipFold: Motion Transitions (<code>com.flipfold.app</code>)<br>
-      <strong>Effective Date:</strong> September 13, 2026
+      <strong>Effective Date:</strong> October 4, 2026
     </div>
 
     <p>This Privacy Policy describes how <strong>FlipFold: Motion Transitions</strong> (the "Application"), developed and operated by <strong>Harshita Singh</strong> ("Service Provider", "we", "us", or "our"), handles device information and protects your privacy.</p>
 
     <div class="highlight-box">
-      <strong>Summary:</strong> FlipFold operates entirely on your physical device. We do not collect, store, transmit, or sell any personal data, location data, or contact lists. Sensor data (such as fold angle and posture) is processed strictly in memory in real time to render visual transition animations.
+      <strong>Summary:</strong> Fold effects run on your device. Screen Flow uses recent screen images only after you agree and enable screen access. These images stay in memory and are not saved or uploaded. Google Play processes purchases, and FlipFold stores a verified purchase record locally to keep lifetime access available offline. We do not use advertising or behavioral analytics, or sell your data. Diagnostic reports are shared only when you choose to share them.
     </div>
 
     <h2>1. Data Controller Information</h2>
@@ -118,18 +118,21 @@
       <li><strong>Fold Posture & Window State:</strong> Determines whether your device is Flat, Half-Fold (Flex mode), or Closed via the Jetpack WindowManager API.</li>
       <li><strong>Display Configuration & Metrics:</strong> Reads screen resolution and orientation to align the visual transition overlay.</li>
     </ul>
-    <p><strong>Strict Privacy Commitment:</strong> All sensor calculations and visual shaders run 100% on-device in temporary volatile memory. Sensor readings are never recorded, never transmitted across the network, and never shared with third parties.</p>
+    <p>Sensor calculations and visual rendering run on-device. Local diagnostic traces can include fold angles, event timing and device information. These traces are not automatically uploaded. See the diagnostic report section below.</p>
 
     <h2>3. Personal Information & Permissions</h2>
     <ul>
       <li><strong>No Account Required:</strong> You do not need to register, log in, or provide any personal details to use the Application.</li>
       <li><strong>No Location Data:</strong> The Application does not request or collect GPS, Wi-Fi, or cellular location data.</li>
       <li><strong>No Camera or Microphone Access:</strong> The Application never requests access to your camera, audio, contacts, or calendar.</li>
-      <li><strong>Local Diagnostics (User-Initiated Only):</strong> If you deliberately choose to export a performance trace from the Diagnostics screen, a local JSON diagnostic report is generated on your device storage. This report contains purely hardware performance metrics (frame render times, sensor event latency) and is only transmitted if you explicitly choose to share the file via Android's system share sheet.</li>
+      <li><strong>Screen Flow and Accessibility access:</strong> Before requesting screen access, FlipFold explains its use and asks for your agreement. If you enable the accessibility service, Screen Flow can take recent screenshots of the active display, including other apps, while effects are enabled, to prepare the page turn before folding. Images may contain information visible on screen. FlipFold does not analyse text, inspect the accessibility view hierarchy, or control other apps. It observes window-change and scroll event types and timing to refresh images. Screenshots remain in memory, are not included in diagnostic reports, and are never saved, shared or uploaded by FlipFold. Turn off effects to stop capture, or disable FlipFold screen access in Android Accessibility settings. Soft Shade and glass effects do not require this access.</li>
+      <li><strong>Other permissions:</strong> Display-over-other-apps access lets FlipFold show temporary transition effects. A foreground service keeps fold detection running, and notification permission lets Android show its ongoing notification. Boot and app-update events can restore effects according to your saved settings and available permissions.</li>
+      <li><strong>Local diagnostics:</strong> FlipFold maintains bounded local runtime diagnostics. When you record, save or export a phone report, it may contain device model and OS details, display and sensor information, fold angles and timing, permission and effect state, capture status, and performance or error information. It does not contain captured screen images. Reports are stored locally and sent only if you choose a recipient using Android’s share sheet. If you send a report to support, we use it to investigate your issue and retain it only as needed for that purpose.</li>
     </ul>
 
     <h2>4. Third-Party Services</h2>
-    <p>The Application utilizes standard core platform libraries provided by Google to enable installation and system updates through the Google Play Store:</p>
+    <p>Google Play handles installation, updates and lifetime purchases. Its billing service processes payment and account information under Google’s own policies. FlipFold does not receive your card details or Google account email through Play Billing.</p>
+    <p>FlipFold queries Google Play for product prices and purchase ownership. It verifies the signed purchase record and acknowledges completed purchases. A local record may include product and order identifiers, purchase time, purchase token and signature. The purchase token is used with Google Play for acknowledgement. A previously verified purchase can support offline access for up to 180 days after the last successful check; a successful ownership query applies refunded or revoked access immediately. Purchase date and order ID are shown in Settings when available.</p>
     <ul>
       <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
     </ul>
@@ -146,7 +149,8 @@
     <p>The Application is directed toward a general audience and is not intended for children under 16 years of age. We do not knowingly solicit or collect information from children.</p>
 
     <h2>7. Data Security & Storage</h2>
-    <p>Because FlipFold does not operate remote servers or store personal data in the cloud, there is no centralized database susceptible to remote breaches. Local user configuration settings (such as effect choices and duration adjustments) remain securely on your device and are wiped when the Application is uninstalled.</p>
+    <p>FlipFold does not upload captured screens or diagnostic traces to an app-operated backend. Settings, verified purchase records and saved reports are stored locally. Captured screen images are released from memory when no longer needed for an effect. The verified purchase cache is excluded from Android backup and device transfer. Other app preferences may be backed up or restored by Android according to your system settings.</p>
+    <p>Uninstalling the app removes its private local data. Reports you exported to another folder or shared with another app remain there until you delete them. Google Play retains its purchase records independently; reinstalling FlipFold does not delete those records.</p>
 
     <h2>8. Your Rights (GDPR & CCPA/CPRA)</h2>
     <p>Depending on your jurisdiction, you have statutory rights concerning personal data:</p>
@@ -157,7 +161,7 @@
     <p>To exercise any rights, contact the Service Provider at <a href="mailto:codecklabs@gmail.com">codecklabs@gmail.com</a>.</p>
 
     <h2>9. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy periodically. Any modifications will be posted to this page with an updated Effective Date. Continued use of the Application signifies acceptance of the revised policy.</p>
+    <p>We may update this Privacy Policy periodically. Any modifications will be posted to this page with an updated Effective Date. We will request consent again where a change to data use requires it.</p>
 
     <h2>10. Contact Us</h2>
     <p>If you have any questions, suggestions, or concerns regarding privacy in FlipFold, please contact us:</p>
